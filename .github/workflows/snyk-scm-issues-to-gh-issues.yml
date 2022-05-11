@@ -1,0 +1,14 @@
+name: snyk-labs/action example - Snyk SCM Issues to Github Issues
+on: workflow_dispatch
+  # - push
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: snyk-labs/actions/snyk-scm-to-gh-issues@main
+        with:
+          snyk_prefix: snyk.sarif
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+          REMOTE_REPO_URL: ${{ github.repositoryUrl }}
