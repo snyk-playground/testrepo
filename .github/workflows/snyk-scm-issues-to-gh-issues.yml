@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: snyk-labs/actions/snyk-scm-issues-to-gh-issues@main
         with:
-          snyk_prefix: snyk.sarif
+          snyk_prefix: "cse_"
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
           GITHUB_TOKEN: ${{ github.token }}
