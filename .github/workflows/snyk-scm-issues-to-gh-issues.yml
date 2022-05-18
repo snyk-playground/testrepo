@@ -4,8 +4,9 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
-      - uses: snyk-labs/actions/snyk-scm-issues-to-gh-issues@main
+      - uses: snyk-labs/actions/snyk-scm-issues-to-gh-issues@feat/options-for-scm-issues-to-gh-issues
         with:
+          options: --use-fresh-issues
           snyk_prefix: "cse"
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
