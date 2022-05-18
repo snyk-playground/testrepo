@@ -1,4 +1,4 @@
-name: snyk-labs/action example - Snyk SCM Issues to Github Issues
+name: Snyk SCM Issues to Github Issues
 on: 
   push:
     branches:
