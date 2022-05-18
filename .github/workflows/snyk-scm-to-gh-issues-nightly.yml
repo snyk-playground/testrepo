@@ -1,0 +1,16 @@
+name: Snyk SCM Issues to Github Issues (nightly)
+on:
+  schedule:
+    - cron: '21 19 * * *' # run at 7:21 PM UTC
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: snyk-labs/actions/snyk-scm-issues-to-gh-issues@feat/use-fresh-issues-option
+        with:
+          snyk_prefix: "cse"
+          use_fresh_issues: "true"
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+          REMOTE_REPO_URL: ${{ github.repositoryUrl }}
