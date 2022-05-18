@@ -1,5 +1,9 @@
 name: snyk-labs/action example - Snyk SCM Issues to Github Issues
-on: [push]
+on: 
+  push:
+    branches:
+      - master
+      - main
 jobs:
   security:
     runs-on: ubuntu-latest
