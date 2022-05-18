@@ -1,5 +1,5 @@
 name: snyk-labs/action example - Snyk SCM Issues to Github Issues
-on: [push]
+on: [push] 
 jobs:
   security:
     runs-on: ubuntu-latest
