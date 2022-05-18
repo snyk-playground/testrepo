@@ -1,7 +1,7 @@
 name: Snyk SCM Issues to Github Issues (nightly)
 on:
   schedule:
-    - cron: '21 19 * * *' # run at 7:21 PM UTC
+    - cron: '24 19 * * *' # run at 7:21 PM UTC
 jobs:
   security:
     runs-on: ubuntu-latest
