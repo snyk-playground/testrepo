@@ -1,5 +1,5 @@
 {
-  "name": "ts-link-akta",
+  "name": "ts-link-akta", 
   "version": "0.2.0",
   "engines": {
     "node" : ">=6.12.3"
