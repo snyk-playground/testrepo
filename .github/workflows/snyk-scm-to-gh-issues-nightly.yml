@@ -6,7 +6,7 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
-      - uses: snyk-labs/actions/snyk-scm-issues-to-gh-issues@feat/use-fresh-issues-option
+      - uses: snyk-labs/actions/snyk-scm-issues-to-gh-issues@main
         with:
           snyk_prefix: "cse"
           use_fresh_issues: "true"
